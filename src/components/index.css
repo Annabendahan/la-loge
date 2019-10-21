@@ -1,0 +1,112 @@
+.homeDiv{
+display:flex;
+align-items: center;
+border-bottom: 1px solid black;
+}
+
+
+.homePic{
+flex: 0 0 50%;
+
+}
+
+.text{
+  flex: 0 0 50%;
+  padding: 3%;
+  font-family: Roboto;
+}
+
+.text p {
+  text-align: justify;
+  width: 70%;
+  font-family: Roboto;
+  letter-spacing: -0.02em;
+  font-size: .8rem;
+  line-height: 1.2;
+}
+
+
+.title-1{
+  font-size: 10rem;
+  font-family: Oswald;
+  color: black;
+  letter-spacing: -0.01em;
+  line-height: .9;
+}
+
+
+.fatTitle{
+  width: 100vw;
+  padding: 1%
+}
+
+.fatPic{
+  width: 100vw;
+}
+
+.secondDiv{
+width: 100%;
+border-bottom: 1px solid black;
+margin-bottom: 2%;
+}
+
+
+.textBox{
+  font-family: Roboto;
+  display: flex;
+  width: 55%;
+  align-items: top;
+  margin:10% auto;
+  justify-content: space-between;
+}
+
+.textBox p{
+  font-size: .8rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+
+.textBox h3{
+  text-align: right;
+  font-size: 1rem;
+
+  margin:0;
+  margin-bottom: 8px;
+  font-weight: 900;
+  color:black;
+}
+
+
+.textBox-right{
+  flex: 0 0 45%;
+  text-align: justify;
+  margin-top:1px;
+}
+
+.textBox-left{
+  flex: 0 0 45%;
+
+  text-align: justify;
+}
+
+.right-div{
+  display: flex;
+  width: 60%;
+  margin-left:40%;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 1px solid black;
+  margin-bottom: 2%;
+
+
+}
+
+.rl-div{
+  flex: 0 0 50%;
+  padding-left: 2%;
+  }
+
+.thirdDiv{
+  border-bottom: 1px solid black;
+}
