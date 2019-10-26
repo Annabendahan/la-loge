@@ -1,0 +1,12 @@
+.soc{
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+  text-align: right;
+  margin:.5% .5% 0 0;
+  margin-left: auto;
+
+  margin-bottom: 3px;
+}
+
+

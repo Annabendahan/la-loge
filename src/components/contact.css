@@ -1,0 +1,46 @@
+.contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 1%;
+
+
+}
+@media (max-width: 600px) {
+  .contact{
+    display: block;
+
+  }
+}
+
+
+.contact-left{
+  width: 80%;
+}
+
+
+.contact-infos{
+  text-align: left;
+  flex: 0 0 35%;
+  margin-left: 10%;
+}
+
+
+@media (max-width: 600px) {
+  .contact-infos{
+    margin-left: 0%;
+
+  }
+}
+
+.contact-infos p{
+  margin-bottom: 0px;
+}
+
+
+
+.contact-cont{
+   border-top: 1px solid black;
+
+}

@@ -1,16 +1,32 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
+import './footer.css'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
+const Footer = () => (
+  <div style={{
       background: `#EFEFE1`,
       fontFamily: `Roboto`,
-      padding: `.8rem 1rem`
+      textAlign: `right`,
+
+      }}>
+  <div
+  style={{
+
+      padding: `0.45rem 0rem`,
+        borderTop: `1px solid black`,
+        borderBottom: `1px solid black`,
+        background: `#EFEFE1`,
+        textAlign: `right`,
+
     }}
-  >
-  <p className="soc">
+     >
+
+     Website by Anna Bendahan
+  </div>
+    <p className="soc">
       <div className="soc1">
         <svg width="17" height="14" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M11 1.05806C10.5909 1.2375 10.1551 1.35644 9.70062 1.41419C10.1681 1.13506 10.5249 0.696437 10.6927 0.16775C10.2568 0.427625 9.77556 0.611188 9.26269 0.713625C8.84881 0.272938 8.25894 0 7.61544 0C6.36694 0 5.36181 1.01338 5.36181 2.25569C5.36181 2.43444 5.37694 2.60631 5.41406 2.76994C3.53925 2.6785 1.88031 1.77994 0.765875 0.411125C0.571312 0.748688 0.457188 1.13506 0.457188 1.551C0.457188 2.332 0.859375 3.02431 1.45887 3.42512C1.09656 3.41825 0.741125 3.31306 0.44 3.14738C0.44 3.15425 0.44 3.16319 0.44 3.17212C0.44 4.268 1.22169 5.17825 2.24675 5.38794C2.06319 5.43812 1.86312 5.46219 1.6555 5.46219C1.51112 5.46219 1.36537 5.45394 1.22856 5.42369C1.52075 6.31675 2.34988 6.97331 3.33575 6.99462C2.5685 7.59481 1.59431 7.95644 0.539688 7.95644C0.35475 7.95644 0.177375 7.94819 0 7.9255C0.998937 8.56969 2.18281 8.9375 3.4595 8.9375C7.60925 8.9375 9.878 5.5 9.878 2.52037C9.878 2.42069 9.87456 2.32444 9.86975 2.22888C10.3173 1.91125 10.6934 1.51456 11 1.05806Z" fill="black"/>
@@ -32,53 +48,8 @@ const Header = ({ siteTitle }) => (
 
       </div>
     </p>
+  </div>
 
-    <div
-      style={{
-
-        padding: `0.45rem 0rem`,
-        borderTop: `1px solid black`,
-        borderBottom: `1px solid black`,
-        background: `#EFEFE1`
-      }}
-    >
-      <h1 style={{ margin:0, marginTop: `-15px`, textAlign: `right` }}>
-        <Link
-          to="/"
-          style={{
-            color: `black`,
-            textDecoration: `none`,
-            fontSize: `1rem`,
-
-
-          }}
-        >
-          La Loge
-        </Link>
-      </h1>
-      <p style={{ margin: 0, textAlign: `right` }}>
-        <Link
-          to="/"
-          style={{
-            color: `black`,
-            textDecoration: `none`,
-            fontSize: `1rem`,
-
-          }}
-        >
-          Studio photo
-        </Link>
-      </p>
-    </div>
-  </header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Footer

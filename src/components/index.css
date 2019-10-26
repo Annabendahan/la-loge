@@ -4,6 +4,13 @@ align-items: center;
 border-bottom: 1px solid black;
 }
 
+@media (max-width: 700px) {
+  .homeDiv{
+    display:block;
+  }
+}
+
+
 
 .homePic{
 flex: 0 0 50%;
@@ -20,9 +27,7 @@ flex: 0 0 50%;
   text-align: justify;
   width: 70%;
   font-family: Roboto;
-  letter-spacing: -0.02em;
-  font-size: .8rem;
-  line-height: 1.2;
+
 }
 
 
@@ -32,13 +37,33 @@ flex: 0 0 50%;
   color: black;
   letter-spacing: -0.01em;
   line-height: .9;
+
+}
+@media (max-width: 900px) {
+  .title-1{
+    font-size: 5rem;
+  }
+}
+
+
+
+
+.title-2{
+  font-size: 7rem;
+  font-family: Oswald;
+  color: black;
+  letter-spacing: -0.01em;
+  line-height: .9;
 }
 
 
 .fatTitle{
   width: 100vw;
-  padding: 1%
+  padding: 2% 0%;
 }
+
+
+
 
 .fatPic{
   width: 100vw;
@@ -60,10 +85,15 @@ margin-bottom: 2%;
   justify-content: space-between;
 }
 
+@media (max-width: 700px) {
+  .textBox{
+     width: 100%;
+     display: block;
+  }
+}
+
 .textBox p{
-  font-size: .8rem;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+
 }
 
 
@@ -93,7 +123,7 @@ margin-bottom: 2%;
 .right-div{
   display: flex;
   width: 60%;
-  margin-left:40%;
+  margin-left:auto;
   justify-content: space-between;
   align-items: center;
   border-left: 1px solid black;
@@ -102,11 +132,59 @@ margin-bottom: 2%;
 
 }
 
+.fourthDiv{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.pic_themes{
+position: absolute;
+width: 40%;
+bottom: 8px;
+right:0px;
+
+}
+
+.fourthDiv-mobile{
+  display: none;
+  }
+
+
+
+@media (max-width: 800px) {
+  .fourthDiv{
+    display: none;
+
+  }
+  .fourthDiv-mobile{
+    display: block;
+
+
+
+  }
+}
+
+
+
+
+
+.fourthDiv__right{
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.fourthDiv__pic{
+  flex: 0 0 40%;
+}
+
 .rl-div{
   flex: 0 0 50%;
   padding-left: 2%;
   }
 
 .thirdDiv{
-  border-bottom: 1px solid black;
+
 }

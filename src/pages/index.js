@@ -3,13 +3,16 @@ import { Link } from "gatsby"
 import "../components/index.css"
 
 import Layout from "../components/layout"
+
 import Image from "../components/image"
 import SEO from "../components/seo"
 import pic1 from "../images/photo-1413840608845-6bd3a8023f2e 1.png"
-import pic2 from "../images/PROJECTS.png"
+import pic2 from "../images/THE PROJECT.png"
 import pic3 from "../images/good11.png"
 import pic4 from "../images/jp-valery-G2GFmGWCbKk-unsplash 2.png"
 import pic5 from "../images/BERLIN.png"
+import pic6 from "../images/OUR WORK.png"
+
 
 const IndexPage = () => (
   <Layout>
@@ -42,12 +45,37 @@ const IndexPage = () => (
       <div className="textBox-right">
         <p> La loge is a french photo studio,
             created to put together argentic photos through projects.
+            La loge is a french photo studio,
+            created to put together argentic photos through projects.
         </p>
       </div>
      </div>
      </div>
 
-     <div className="thirdDiv">
+     <div className="fourthDiv">
+     <div className="fourthDiv__pic">
+        <img  src={pic1}  alt="fireSpot" />
+      </div>
+
+      <div className="fourthDiv__right">
+        <img  src={pic6} className="fatTitle"  alt="fireSpot" />
+        <h3> lorem ipsum </h3>
+        <p> La loge is a french photo studio,
+            created to put together argentic photos through projects.
+        </p>
+        <img className="pic_themes"  src={pic4}  alt="fireSpot" />
+      </div>
+
+     </div>
+
+
+     <div className="fourthDiv-mobile">
+      <img  src={pic6} className="fatTitle"  alt="fireSpot" />
+      <img  src={pic1}  alt="fireSpot" />
+      <img  src={pic4}  alt="fireSpot" />
+     </div>
+
+     {/* <div className="thirdDiv">
         <img  src={pic4} className="fatPic"  alt="fireSpot" />
         <div className="right-div">
           <div className="rl-div">
@@ -60,10 +88,10 @@ const IndexPage = () => (
            <img  src={pic5} className=""  alt="fireSpot" />
           </div>
         </div>
-     </div>
+     </div> */}
 
-     <div className="fourthDiv">
-     </div>
+
+
 
 
 

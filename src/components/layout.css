@@ -202,9 +202,11 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: black;
+  overflow-x:hidden;
   font-family: georgia, serif;
   font-weight: normal;
+  background: #EFEFE1;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -221,7 +223,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0rem;
 }
 h1 {
   margin-left: 0;
@@ -384,6 +386,7 @@ p {
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
+  font-family: Roboto;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
